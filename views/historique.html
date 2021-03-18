@@ -1,0 +1,51 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Mes courses</a>
+        <ul id="nav-course" class="right hide-on-med-and-down">
+            <li><a href="index.html" >Liste courrante</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <table>
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Nombre d'articles</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="listeTable">
+        </tbody>
+    </table>
+</div>
+
+<div id="listeDeleteModal" class="modal">
+    <div class="modal-content">
+        <h5 id="textModal"></h5>
+    </div>
+    <div class="modal-footer">
+        <a id="btnDeleteValide" class="btn">Valider</a>
+    </div>
+</div>
+
+
+<div id="listeModalArticle" class="modal">
+    <div class="modal-content">
+        <h5 id="textModalArticle"></h5>
+        <table>
+            <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Quantité</th>
+                <th>Pris (oui/non)</th>
+            </tr>
+            </thead>
+            <tbody id="articlesTableHistorique">
+            </tbody>
+        </table>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+    </div>
+</div>

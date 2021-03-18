@@ -1,0 +1,44 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Mes courses</a>
+        <ul id="nav-course" class="right hide-on-med-and-down">
+            <li><a onclick="indexController.newList()">Nouvelle Liste</a></li>
+            <li><a onclick="navigate('historique')">Historique</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h2 id="titleIndex"></h2>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s5">
+                    <input id="fieldArticleName" type="text" class="validate">
+                    <label for="fieldArticleName">Article</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="fieldArticleQte" type="number" class="validate">
+                    <label for="fieldArticleQte">Quantite</label>
+                </div>
+                <div class="input-field col s2">
+                    <a id="btn_addArticle" class="btn waves-effect waves-light" onclick="indexController.addArticle()">Ajouter
+                        <i class="material-icons right">send</i>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Pris</th>
+                <th>Nom</th>
+                <th>Quantité</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="articlesTable">
+        </tbody>
+    </table>
+</div>

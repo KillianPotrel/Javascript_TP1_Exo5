@@ -3,6 +3,17 @@ class BaseController {
         M.AutoInit();
         this.setBackButtonView('index')
         this.model = new Model()
+
+        /*document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });*/
     }
 
     getModal(selector) {
@@ -14,4 +25,6 @@ class BaseController {
             navigate(view)
         }; history.pushState({}, '');
     }
+
+
 }

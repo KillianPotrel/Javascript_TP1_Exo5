@@ -42,6 +42,15 @@ class Model {
     }
 
     insertArticle(nom, qte) {
+        //Si l'article existe déjà on l'incrémente
+        for(let i = 0; i < this.liste.articles.length;i++){
+            if(this.liste.articles[i].nom === nom){
+                this.liste.articles[i].qte = (parseInt(this.liste.articles[i].qte) + parseInt(qte)).toString()
+                this.saveCurrentListe()
+                return
+            }
+        }
+        //Sinon on l'instancie dans la liste
         let id = 0
         if(this.liste.articles.length > 0)
             id = this.liste.articles[this.liste.articles.length - 1].id + 1

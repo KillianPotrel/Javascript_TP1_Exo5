@@ -37,6 +37,11 @@ class Model {
         return this.liste
     }
 
+    updateDateCurrentListe(){
+        this.liste.builddate = new Date()
+        this.saveCurrentListe()
+    }
+
     getCurrentArticle(){
         return this.liste.articles
     }

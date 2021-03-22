@@ -66,6 +66,12 @@ class IndexController extends BaseController{
         $('#articlesTable').innerHTML = html
     }
 
+    reloadTime(){
+        this.model.updateDateCurrentListe()
+        const listeCurrent = this.model.getCurrentListe()
+        $('#titleIndex').innerText = `Liste du ${listeCurrent.builddate.toLocaleDateString()} ${listeCurrent.builddate.toLocaleTimeString()}`
+        M.toast({html: 'Actualisation de la date de votre liste effectuée.'})
+    }
     newList() {
         const liste = this.model.getCurrentListe()
 

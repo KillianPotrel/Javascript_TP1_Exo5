@@ -1,5 +1,5 @@
 <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper green darken-1">
         <a href="#" class="brand-logo">Mes courses</a>
         <ul id="nav-course" class="right hide-on-med-and-down">
             <li><a onclick="indexController.newList()">Nouvelle Liste</a></li>
@@ -25,7 +25,18 @@
 </ul>-->
 
 <div class="container">
-    <h2 id="titleIndex"></h2>
+    <div class="row">
+        <div class="col s1">
+            <div class="row">
+                <a class="btn-floating" style="margin-top: 45px;" onclick="indexController.reloadTime()"><i class="material-icons">loop</i></a></td>
+            </div>
+        </div>
+        <div class="col s11">
+            <div class="row">
+                <h2 id="titleIndex"></h2>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <form class="col s12">
             <div class="row">
